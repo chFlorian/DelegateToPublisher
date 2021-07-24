@@ -11,6 +11,12 @@
 		0458598626AC3F6F004BAB3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458598526AC3F6F004BAB3C /* ContentView.swift */; };
 		0458598826AC3F70004BAB3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0458598726AC3F70004BAB3C /* Assets.xcassets */; };
 		0458598B26AC3F70004BAB3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0458598A26AC3F70004BAB3C /* Preview Assets.xcassets */; };
+		0458599426AC3F96004BAB3C /* EmailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458599326AC3F96004BAB3C /* EmailProvider.swift */; };
+		0458599626AC3FD1004BAB3C /* EmailDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458599526AC3FD1004BAB3C /* EmailDelegate.swift */; };
+		0458599926AC4004004BAB3C /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458599826AC4004004BAB3C /* Email.swift */; };
+		0458599B26AC402C004BAB3C /* EmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458599A26AC402C004BAB3C /* EmailViewModel.swift */; };
+		0458599D26AC417F004BAB3C /* EmailPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458599C26AC417F004BAB3C /* EmailPublisher.swift */; };
+		0458599F26AC41DD004BAB3C /* InboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458599E26AC41DD004BAB3C /* InboxViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		0458598526AC3F6F004BAB3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0458598726AC3F70004BAB3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0458598A26AC3F70004BAB3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0458599326AC3F96004BAB3C /* EmailProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailProvider.swift; sourceTree = "<group>"; };
+		0458599526AC3FD1004BAB3C /* EmailDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailDelegate.swift; sourceTree = "<group>"; };
+		0458599826AC4004004BAB3C /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
+		0458599A26AC402C004BAB3C /* EmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewModel.swift; sourceTree = "<group>"; };
+		0458599C26AC417F004BAB3C /* EmailPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailPublisher.swift; sourceTree = "<group>"; };
+		0458599E26AC41DD004BAB3C /* InboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +63,13 @@
 		0458598226AC3F6F004BAB3C /* DelegateToPublisher */ = {
 			isa = PBXGroup;
 			children = (
+				0458599226AC3F7F004BAB3C /* Publisher */,
+				0458599126AC3F7B004BAB3C /* Delegate */,
 				0458598326AC3F6F004BAB3C /* DelegateToPublisherApp.swift */,
 				0458598526AC3F6F004BAB3C /* ContentView.swift */,
 				0458598726AC3F70004BAB3C /* Assets.xcassets */,
 				0458598926AC3F70004BAB3C /* Preview Content */,
+				0458599826AC4004004BAB3C /* Email.swift */,
 			);
 			path = DelegateToPublisher;
 			sourceTree = "<group>";
@@ -65,6 +80,25 @@
 				0458598A26AC3F70004BAB3C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0458599126AC3F7B004BAB3C /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				0458599326AC3F96004BAB3C /* EmailProvider.swift */,
+				0458599526AC3FD1004BAB3C /* EmailDelegate.swift */,
+				0458599A26AC402C004BAB3C /* EmailViewModel.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		0458599226AC3F7F004BAB3C /* Publisher */ = {
+			isa = PBXGroup;
+			children = (
+				0458599C26AC417F004BAB3C /* EmailPublisher.swift */,
+				0458599E26AC41DD004BAB3C /* InboxViewModel.swift */,
+			);
+			path = Publisher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0458599426AC3F96004BAB3C /* EmailProvider.swift in Sources */,
+				0458599B26AC402C004BAB3C /* EmailViewModel.swift in Sources */,
+				0458599926AC4004004BAB3C /* Email.swift in Sources */,
+				0458599F26AC41DD004BAB3C /* InboxViewModel.swift in Sources */,
+				0458599626AC3FD1004BAB3C /* EmailDelegate.swift in Sources */,
+				0458599D26AC417F004BAB3C /* EmailPublisher.swift in Sources */,
 				0458598626AC3F6F004BAB3C /* ContentView.swift in Sources */,
 				0458598426AC3F6F004BAB3C /* DelegateToPublisherApp.swift in Sources */,
 			);
